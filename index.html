@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Vérification de valeur</title>
+    <style>
+      .vert {
+        color: green;
+      }
+      .rouge {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="champ1">Puzzle 1 :</label><br/>
+    <input type="text" id="champ1">
+    <button id="verifier1">Vérifier</button>
+    <div id="message1"></div>
+    <button id="hint1">Hint?</button>
+    <div id="msg1"></div>
+    <br/>
+    <label for="champ2">Puzzle 2 :</label><br/>
+    <input type="text" id="champ2">
+    <button id="verifier2">Vérifier</button>
+    <div id="message2"></div>
+    <button id="hint2">Hint?</button>
+    <div id="msg2"></div>
+    <br/>
+    <label for="champ3">Puzzle 3 :</label><br/>
+    <input type="text" id="champ3">
+    <button id="verifier3">Vérifier</button>
+    <div id="message3"></div>
+    <button id="hint3">Hint?</button>
+    <div id="msg3"></div>
+    <br/>
+    <label for="champ4">Puzzle 4 :</label><br/>
+    <input type="text" id="champ4">
+    <button id="verifier4">Vérifier</button>
+    <div id="message4"></div>
+    <button id="hint4">Hint?</button>
+    <div id="msg4"></div>
+    <script>
+      const champ1 = document.getElementById('champ1');
+      const bouton1 = document.getElementById('verifier1');
+      const message1 = document.getElementById('message1');
+      const boutonH1 = document.getElementById('hint1');
+        const messageH1 = document.getElementById('msg1');
+
+      const champ2 = document.getElementById('champ2');
+      const bouton2 = document.getElementById('verifier2');
+      const message2 = document.getElementById('message2');
+      const boutonH2 = document.getElementById('hint2');
+        const messageH2 = document.getElementById('msg2');
+
+      const champ3 = document.getElementById('champ3');
+      const bouton3 = document.getElementById('verifier3');
+      const message3 = document.getElementById('message3');
+      const boutonH3 = document.getElementById('hint3');
+        const messageH3 = document.getElementById('msg3');
+      
+      const champ4 = document.getElementById('champ4');
+      const bouton4 = document.getElementById('verifier4');
+      const message4 = document.getElementById('message4');
+      const boutonH4 = document.getElementById('hint4');
+        const messageH4 = document.getElementById('msg4');
+
+      bouton1.addEventListener('click', function() {
+        if (champ1.value === '1') {
+          message1.textContent = 'Congratulations, you can open the puzzle 1';
+          message1.classList.add('vert');
+          message1.classList.remove('rouge');
+        } else {
+          message1.textContent = 'Try again :(';
+          message1.classList.add('rouge');
+          message1.classList.remove('vert');
+        }
+      });
+
+
+        boutonH1.addEventListener('click', function() {
+        messageH1.textContent = 'Example';
+        messageH1.style.display = 'block';
+        });
+
+      bouton2.addEventListener('click', function() {
+        if (champ2.value === '2') {
+          message2.textContent = 'Congratulations, you can open the puzzle 2';
+          message2.classList.add('vert');
+          message2.classList.remove('rouge');
+        } else {
+          message2.textContent = 'Try again :(';
+          message2.classList.add('rouge');
+          message2.classList.remove('vert');
+        }
+      });
+
+      boutonH2.addEventListener('click', function() {
+        messageH2.textContent = 'Example';
+        messageH2.style.display = 'block';
+        });
+
+      bouton3.addEventListener('click', function() {
+        if (champ3.value === '3') {
+          message3.textContent = 'Congratulations, you can open the puzzle 3';
+          message3.classList.add('vert');
+          message3.classList.remove('rouge');
+        } else {
+          message3.textContent = 'Try again :(';
+          message3.classList.add('rouge');
+          message3.classList.remove('vert');
+        }
+      });
+
+      boutonH3.addEventListener('click', function() {
+        messageH3.textContent = 'Example';
+        messageH3.style.display = 'block';
+        });
+
+      bouton4.addEventListener('click', function() {
+        if (champ4.value === '4') {
+          message4.textContent = 'Congratulations, you can open the puzzle 4';
+          message4.classList.add('vert');
+          message4.classList.remove('rouge');
+        } else {
+          message4.textContent = 'Try again :(';
+          message4.classList.add('rouge');
+          message4.classList.remove('vert');
+        }
+      });
+
+      boutonH4.addEventListener('click', function() {
+        messageH4.textContent = 'Example';
+        messageH4.style.display = 'block';
+        });
+    </script>
+  </body>
+</html>
