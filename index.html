@@ -17,7 +17,7 @@
   </head>
   <body>
     <label for="champ1">Puzzle 1 :</label><br/>
-    <input type="text" id="champ1">
+    <input type="text" id="champ1" placeholder="The code is 123">
     <button id="verifier1">Vérifier</button>
     <div id="message1"></div>
     <button id="hint1">Hint?</button>
@@ -69,7 +69,7 @@
         const messageH4 = document.getElementById('msg4');
 
       bouton1.addEventListener('click', function() {
-        if (champ1.value === '1') {
+        if (champ1.value === '123') {
           message1.textContent = 'Congratulations, you can open the puzzle 1';
           message1.classList.add('vert');
           message1.classList.remove('rouge');
@@ -82,12 +82,12 @@
 
 
         boutonH1.addEventListener('click', function() {
-        messageH1.textContent = 'Example';
+        messageH1.textContent = 'Clear the output and watch what is written';
         messageH1.style.display = 'block';
         });
 
       bouton2.addEventListener('click', function() {
-        if (champ2.value === '2') {
+        if (champ2.value === '315') {
           message2.textContent = 'Congratulations, you can open the puzzle 2';
           message2.classList.add('vert');
           message2.classList.remove('rouge');
@@ -99,12 +99,12 @@
       });
 
       boutonH2.addEventListener('click', function() {
-        messageH2.textContent = 'Example';
+        messageH2.textContent = 'You have to find the three handkerchief numbers and put them back in the order of the ones on the desk.'
         messageH2.style.display = 'block';
         });
 
       bouton3.addEventListener('click', function() {
-        if (champ3.value === '3') {
+        if (champ3.value === '411') {
           message3.textContent = 'Congratulations, you can open the puzzle 3';
           message3.classList.add('vert');
           message3.classList.remove('rouge');
@@ -116,12 +116,12 @@
       });
 
       boutonH3.addEventListener('click', function() {
-        messageH3.textContent = 'Example';
+        messageH3.textContent = 'You have to find the dice in the backpack and the one around the door and look at the paper order.';
         messageH3.style.display = 'block';
         });
 
       bouton4.addEventListener('click', function() {
-        if (champ4.value === '4') {
+        if (champ4.value === '467') {
           message4.textContent = 'Congratulations, you can open the puzzle 4';
           message4.classList.add('vert');
           message4.classList.remove('rouge');
@@ -133,7 +133,7 @@
       });
 
       boutonH4.addEventListener('click', function() {
-        messageH4.textContent = 'Example';
+        messageH4.textContent = 'Scan the QR code in the race bag and look for the red text.';
         messageH4.style.display = 'block';
         });
     </script>
